@@ -1,0 +1,18 @@
+#pageDetails {
+	position:relative;
+	//top: -20px;
+}
+
+#pageDetails h2, #pageDetails p {
+	display: inline-block;
+	font-size: 100%;
+	margin-top:0;
+}
+
+#pageDetails h2 {
+	display: ;
+}
+
+#pageDetails p {
+	margin-right:40px;
+}

@@ -1,0 +1,39 @@
+.softwareExample {
+	margin-top: 30px;
+	border-top: 3px solid;
+	border-color: #9CA8B8;
+	padding-top: 30px;
+}
+
+.softwareExample .timeInfo h3, .softwareExample .timeInfo p{
+	display: inline-block;
+}
+
+.softwareExample .techUsed h3, .softwareExample .techUsed ul, .softwareExample .techUsed li, .softwareExample .techUsed p{
+	display: inline-block;
+}
+
+.projectType h3, .projectType p  {
+	display: inline-block;
+}
+
+.softwareExample .relatedLinks ul {
+	list-style: circle;
+}
+
+.softwareExample .relatedLinks li {
+	margin-left: 20px;
+}
+
+
+.infoTag {
+	margin-left: 5px;
+	border-left: 2px #888888 solid;
+	padding-left: 5px;
+	font-style: italic;
+	color: #8E9AAB
+}
+
+.softwareExample .softwareSummary p{
+	line-height: 140%;
+}

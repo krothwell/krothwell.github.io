@@ -1,0 +1,151 @@
+body {
+    margin-top: 4em;
+    /**background-color:#1A222C;*/
+}
+
+#welcomeSect{
+    min-height:81vh;
+}
+
+/* the welcome image is hidden to make room for the text */
+#welcomeImg{
+    display:none;
+}
+
+/* The welcome navigation is set to the height of the entire site, and layered above all
+of the site content except the header with a 50% opacity, and its position fixed just 
+below the main header.The welcome nav becomes visible once the hamburger menu has been selected. */
+#welcomeNav{
+    top:5.5em;
+    position:fixed;
+    height:100%;
+    z-index:4;
+    background-color:rgba(36,57,79,.5);
+    display:none;
+}
+
+#welcomeNav ul {
+    text-align:center;
+}
+
+#welcomeNav li {
+    width:6.5em;
+    margin-left:0%;
+    font-weight:500;
+    margin-top:0.3em;
+    font-size:0.9em;
+}
+
+#welcomeNav div{
+    width:6.5em;
+    height: 6.5em;
+    border-width:thin;
+    border-style:solid;
+    padding: 5% 3% 3% 3%;
+    border-radius:1em;
+    display:inline-block;
+    background-color:#1A222C;
+}
+
+.welcomeLink:hover,
+.aimsLink:hover,
+.modulesLink:hover,
+.structureLink:hover,
+.careersLink:hover,
+.contactLink:hover,
+.moreInfoLink:hover,
+.welcomeLink,
+.aimsLink,
+.modulesLink,
+.structureLink,
+.careersLink,
+.contactLink,
+.moreInfoLink{
+    background-size: 5em 5em;
+}
+
+#h1p1{
+    font-size: 1.1em;
+}
+
+#h1p2{
+    font-size: 2.2em;
+}
+
+/*  hamburger menu which is hidden at larger window widths 
+    is now displayed in the main header */
+#hamburger{
+    display:inline-block;
+}
+
+#contentMargin{
+    border-left:none;
+    width:100%;
+}
+
+#topHeader {
+    border-left:none;
+    border-radius:0 0 0 0em;
+}
+
+h1{
+    margin: 0 0 0 3%;
+    position:relative;
+}
+
+h2 {
+    font-size:1.2em;
+    left:0.5em;
+}
+
+/* the padding on top level div items is reduced to take up the space left by hiding left nav */
+#aimsDiv, #modulesDiv, #structureDiv,#careersDiv, #contactDiv, #moreInfoDiv{
+    text-align: justify;
+    margin-right:0%;
+	margin-top:0;
+    padding: 1em 1em 1em 1em;
+    position:relative;
+}
+
+#aimsDiv p, #modulesDiv p:first-child, #structureDiv p, #careersDiv p, #contactDiv p, form, #moreInfoDiv p {
+	font-weight: 500;
+	font-size:1.2em;
+}
+
+#aimsSect, #modulesSect, #structureSect, #careersSect, #contactSect, #moreInfoSect{
+    background-size: 20em;
+    background-position: bottom;
+}
+
+#sideNav{
+    display:none;
+}
+
+.downScroller img{
+    max-height:3.5em;
+    max-width:3.5em;
+}
+
+.downScroller{
+    bottom:2em;
+}
+
+.structureLists, .linkColumn{
+    display:inline-block;
+    vertical-align:top;
+    width:100%;
+    margin-left:0.1%;
+}
+
+#modulesDiv h3, #structureDiv h3, #moreInfoDiv h3{
+    font-weight: 500;
+    font-size:1.1em;
+}
+
+.careersBox span{
+    font-size:1.1em;
+}
+
+.careersBox li{
+    font-size:1em;
+}
