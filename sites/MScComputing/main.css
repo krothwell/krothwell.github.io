@@ -1,0 +1,720 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 2. v2.0 | 20110126
+  License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+    margin-top: 6.5em;
+    /**background-color:#1A222C;*/
+    background: -webkit-linear-gradient(#1A222C, #24394F); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#1A222C, #24394F); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#1A222C, #24394F); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#1A222C, #24394F); /* Standard syntax (must be last) */
+}
+
+/* COLOURS */
+
+/* white - should be applied to all text and links on hover, but not the default link color */
+h1,
+h2,
+h3,
+h4, 
+p,
+label,
+input, 
+textArea,
+section div,
+a:hover,
+a:active,
+#message,
+#topHeader,
+#welcomeNav div:hover,
+#sideNav div:hover,
+#moreInfoDiv a:hover
+{
+    color: white;
+}
+
+/* deepskyblue - should be applied to link text and all borders except for thosed used to divide the sections and navigation */
+h2,
+input, 
+textArea,
+a:link,
+.careersBox,
+#topHeader,
+#h1p1,
+#h1p2,
+#welcomeDiv,
+#welcomeNav div,
+#welcomeNav li,
+#modulesDiv h3, 
+#structureDiv h3, 
+#moreInfoDiv h3,
+#modulesDiv li,
+#modulesDiv p, 
+#aimsDiv li
+{
+    border-color: deepskyblue;
+}
+
+textArea,
+a:link,
+#welcomeDiv,
+#welcomeNav div,
+#welcomeNav li,
+#sideNav ul div
+{
+    color: deepskyblue;
+}
+
+/* red - should be applied to borders used to divide sections of the page up */
+#contentMargin,
+.bottomBorder
+{
+    border-color: red;
+}
+
+/* yellow - should be applied to navigation button borders and visited external links */
+#welcomeNav div,
+#sideNav li
+{
+    border-color: yellow;
+}
+a:visited{
+    color: yellow;
+}
+
+#topHeader {
+    width: 100%;
+    z-index: 2;
+}
+
+#topHeader, h2{
+    font-family: arial;
+    background-color: #1A222C;
+}
+
+#topHeader {
+    top: 0;
+    position: fixed;
+    background-color: #1A222C;
+    min-height: 3em;
+    border-style: solid;
+    border-left-width: medium;
+    border-bottom-width: thick;
+    border-radius: 0 0 0 2em;
+}
+
+h1{
+    display: inline-block;
+    margin: 0 0 0 15%;
+    position: relative;
+}
+
+/* h1 is split using 2 span to put on different lines */
+#topHeader #h1p1,#h1p2{
+    display: block;
+    position: relative;
+}
+
+#h1p1{
+    font-size: 1.3em;
+    padding-left: 0.3em;
+    padding-top: 0.3em;
+    width: 8.1em;
+    border-style: solid;
+    border-left-width: thin;
+    border-bottom-width: thin;
+    border-radius: 0 0 0 0.5em;
+}
+
+#h1p2{
+    font-size: 4em;
+    text-transform:uppercase;
+    margin-left:2%;
+    font-family: Consolas;
+    width:7.4em;
+    border-style:solid;
+    border-right-width:medium;
+    border-top-width:thin;
+    padding-bottom:0.3em;
+    z-index:4;
+}
+
+/* hamburger menu is initially hidden until screen width is reduced below 650px */
+#hamburger{
+    width:2.2em;
+    height:2.2em;
+    padding:0.7em 0 0 0.4em;
+    display:none;
+}
+
+/* #contentMargin div holds all content under top header, used to apply red border to length of page and help centre content */
+#contentMargin{
+    height:100%;
+    width:83%;
+    margin-left:17%;
+    font-family:arial;
+    z-index:3;
+    border-left-style:solid;
+    border-left-width:thin;
+}
+
+/*#topAnchor is offset using bottom because of body margin causing anchor link to fall bellow top of page */
+a#topAnchor{
+    display: block;
+    position: relative;
+    bottom:6.5em;
+    visibility:hidden;
+}
+
+/* anchorPoints are offset so that h2s appear in correct place when anchor links are clicked */
+a.anchorPoint{
+	display: block;
+    position: relative;
+    top: -8em;
+    visibility: hidden;
+}
+
+h2 {
+    position:relative;
+    font-size:1.8em;
+    z-index:3;
+    left:18%;
+    background-color: #1A222C;
+    display:inline;
+    padding: 0.3% 0.75% 0.3% 0.75%;
+    border-style:solid;
+    border-width:thin;
+    border-radius:0.5em;
+    font-weight:600;
+}
+
+section{
+    z-index:1;
+}
+
+/* #welcomeSect and #welcomeNav heights are set to take up most of view port, so that page below won't show up  */
+#welcomeSect{
+    min-height:30vh;
+}
+#welcomeNav{
+    min-height:50vh;
+    display:block;
+}
+
+#welcomeDiv{
+  display: -webkit-flex;
+  display:         flex;
+  -webkit-align-items:flex-end;
+          align-items:flex-end;
+  -webkit-justify-content:flex-end;
+          justify-content:flex-end;
+
+    margin:0 auto 0 auto;
+    text-align: justify;
+    border-bottom-style:solid;
+    border-bottom-width:thick;
+    padding-left:10%;
+    padding-right:27%;
+    padding-top:1em;
+    position:relative;
+}
+
+#welcomeDiv p{
+    padding:2%;
+    background-color: rgba(36,57,79,.5);
+}
+
+#welcomeDiv span{
+    font-size:1.5em;
+    font-weight:bold;
+    display:block;
+    margin-bottom:3%;
+    
+}
+
+#welcomeImg {
+    position:relative;
+    width:10.5em;
+    height:10.5em;
+    margin-right:2em;
+}
+
+p, li {
+    font-size:1em;
+}
+
+#welcomeNav{
+    
+    margin-right:17%;   
+}
+
+
+#welcomeNav div:hover{
+    background-color:#24394F;
+}
+    
+
+#welcomeNav div{
+    width:10em;
+    height: 8em;
+    border-width:thin;
+    border-style:solid;
+    padding: 5% 3% 3% 3%;
+    border-radius:1em;
+}
+
+#welcomeNav li {
+    display:inline-block;
+    width:25%;
+    margin-left:6%;
+    font-weight:600;
+    text-transform:uppercase;
+    text-align:center;
+    margin-top:1em;
+    font-size:1.2em;
+
+}
+
+/*  Div classes are used to display the images as background urls so that they can change on mouse over. 
+    The classes are used in both navigation menus.
+
+/* Navigation */
+.welcomeLink:hover{
+    background: url('resources/welcomeImg2.png') no-repeat bottom right;
+}
+.welcomeLink{
+    background: url('resources/welcomeImg.png') no-repeat bottom right;
+}
+.aimsLink:hover{
+    background: url('resources/aimsImg2.png') no-repeat bottom right;
+}
+.aimsLink{
+    background: url('resources/aimsImg.png') no-repeat bottom right;
+}
+.modulesLink:hover{
+    background:url(resources/modulesImg2.png) no-repeat bottom right;
+}
+.modulesLink{
+    background:url(resources/modulesImg.png) no-repeat bottom right;
+}
+.structureLink:hover{
+    background:url(resources/programmeImg2.png) no-repeat bottom right;
+}
+.structureLink{
+    background:url(resources/programmeImg.png) no-repeat bottom right;
+}
+.careersLink:hover{
+    background:url(resources/pathImg2.png) no-repeat bottom right;
+}
+.careersLink{
+    background:url(resources/pathImg.png) no-repeat bottom right;
+}
+.contactLink:hover{
+    background:url(resources/contactImg2.png) no-repeat bottom right;
+}
+.contactLink{
+    background:url(resources/contactImg.png) no-repeat bottom right;
+}
+.moreInfoLink:hover{
+    background:url(resources/linksImg2.png) no-repeat bottom right;
+}
+.moreInfoLink{
+    background:url(resources/linksImg.png) no-repeat bottom right;
+}
+.welcomeLink:hover,
+.aimsLink:hover,
+.modulesLink:hover,
+.structureLink:hover,
+.careersLink:hover,
+.contactLink:hover,
+.moreInfoLink:hover,
+.welcomeLink,
+.aimsLink,
+.modulesLink,
+.structureLink,
+.careersLink,
+.contactLink,
+.moreInfoLink{
+    background-size: 7em 7em;
+}
+
+#sideNav .welcomeLink:hover,
+#sideNav .aimsLink:hover,
+#sideNav .modulesLink:hover,
+#sideNav .structureLink:hover,
+#sideNav .careersLink:hover,
+#sideNav .contactLink:hover,
+#sideNav .moreInfoLink:hover,
+#sideNav .welcomeLink,
+#sideNav .aimsLink,
+#sideNav .modulesLink,
+#sideNav .structureLink,
+#sideNav .careersLink,
+#sideNav .contactLink,
+#sideNav .moreInfoLink{
+    background-size: 2.4em 2.4em;
+    background-position:left;
+}
+
+/* Used to indicate section divides */
+.bottomBorder{
+    position:relative;
+    margin-top:2em;
+    text-align:right;
+    border-top-style:solid;
+    border-top-width:thick;    
+}
+
+/* carries image, offset to center image on bottomBorder border. */
+.downScroller{
+    position:relative;
+    bottom:2.5em;
+    margin-right:10%;
+}
+
+.downScroller img{
+    position:relative;
+    max-height:4.5em;
+    max-width:4.5em;
+}
+
+
+#aimsSect{
+    background:url(resources/aimsImgBG.png) no-repeat top right
+}
+#modulesSect{
+    background:url(resources/modulesImgBG.png) no-repeat bottom right
+}
+#structureSect{
+    background:url(resources/programmeImgBG.png) no-repeat bottom right
+}
+#careersSect{
+    background:url(resources/pathImgBG.png) no-repeat bottom right
+}
+#contactSect{
+    background:url(resources/contactImgBG.png) no-repeat top right
+}
+#moreInfoSect{
+    background:url(resources/linksImgBG.png) no-repeat top right
+}
+
+/* height for each section should be big enough to hid next section from view but keep the divider in view */
+#aimsSect, #modulesSect, #structureSect, #careersSect, #contactSect, #moreInfoSect{
+    min-height: 81vh;
+    background-size: 50em;
+}
+
+/*last page can be full screen length for good measure, to ensure the anchor link scrolls to optimal position */
+#moreInfoSect{
+    min-height: 100vh;
+}
+
+/* high level divs for each section - the padding left is wide to make room for left navigation. */
+#aimsDiv, #modulesDiv, #structureDiv,#careersDiv, #contactDiv, #moreInfoDiv{
+    text-align: justify;
+    margin-right: 20%;
+	margin-top: 0;
+    padding: 2em 3em 2em 19em;
+    position: relative;
+}
+
+#aimsDiv p, #modulesDiv p:first-child, #structureDiv p, #careersDiv p, #contactDiv p, form, #moreInfoDiv p{
+    background-color: rgba(36,57,79,.5);
+	display:block;
+	position:relative;
+	font-weight: 600;
+	font-size:1.7em;
+    padding-right:2em;
+    border-width:0;
+    width:100%;
+    margin-left:0;
+}
+
+#aimsDiv ul{
+	display:block;
+    padding-left:5em;
+}
+
+
+#modulesDiv h3, #structureDiv h3, #moreInfoDiv h3{
+    text-transform:uppercase;
+    font-weight: 600;
+    font-size:1.5em;
+    padding:1em 0.5em;
+    border-style:solid;
+    border-left-width:medium;
+    border-bottom-width:medium;
+    margin-top:1em;
+}
+
+#modulesDiv li, #modulesDiv p, #aimsDiv li {
+    font-size:1em;
+    margin-left:5%;
+    border-style:solid;
+    border-left-width:thin;
+    border-bottom-width:thin;
+}
+
+.modNames, #aimsDiv li, #structureDiv h4{
+    display:block;
+    padding:1%;
+    font-size:1.3em;
+    
+}
+
+#aimsDiv li{
+    margin-left:0;
+    font-size:1.4em;
+    padding-top:1em;
+}
+
+
+.modDescriptions, #modulesDiv p, #structureDiv li{
+    display:block;
+    margin-left:5%;
+    padding:1%;
+}
+
+#listWrapper{
+	background-color: rgba(36,57,79,.5);
+}
+
+
+.structureLists, .linkColumn{
+    display:inline-block;
+    vertical-align:top;
+    width:49%;
+    margin-left:0.1%;
+}
+
+#structureDiv h4{
+    margin-left:3%;
+    font-weight:600;
+}
+
+#structureDiv li{
+    display:list-item;
+    padding:0.3em;
+    
+}
+
+.structUL1{
+    list-style:square;
+    padding:0.4em;
+}
+
+.structUL1 li{
+    font-size:1em;
+    
+}
+
+.structUL2 {
+	margin-top:0.3em;
+}
+
+.structUL2 li{
+    list-style:circle;
+    font-size:0.9em;
+}
+
+#careersDiv ul{
+    margin-top:1em;
+}
+
+.careersBox{
+    display:block;
+    background-color: rgba(36,57,79,.5);
+    border-width:thin;
+    border-style:solid;
+    font-size:0.8em;
+    width:100%;
+    overflow:hidden;
+}
+
+.careersP{
+    text-align:left;
+    position:relative;
+    display: inline-block;
+    max-width:50%;
+    vertical-align:middle;
+    padding:1em;
+    margin-left:4%;
+}
+
+
+.careersBox img{
+    width:17em;
+    height:17em;
+    display:inline-block;
+    vertical-align:middle;
+}
+
+
+.careersBox span{
+    font-size:1.3em;
+    display:inline-block;
+    padding-left:17%;
+    padding-top:1em; 
+}
+
+form{
+    margin-top:1em;
+    background:none;
+}
+
+label{
+    display:block;
+    margin-left:20%;
+    padding:0.4em 0%
+}
+
+input, textArea{
+    display:block;
+    margin:auto;
+    border-style:solid;
+    border-width:medium;
+    background-color:#1A222C;
+    font-size:1em;
+}
+
+.textIn, #message{
+    width:60%;
+}
+
+#message{
+    height:13.5em;
+    font-size:1.2em;
+    margin-bottom:0.4em;
+}
+
+#submitInput:hover{
+    background-color: #1A222C;
+}
+
+#submitInput{
+    background-color: #24394F;
+}
+
+#moreInfoDiv h3{
+    
+}
+
+#moreInfoDiv h3{
+    text-align:center;
+}
+
+#moreInfoDiv li{
+    text-align:center;
+    padding:0.5em;
+}
+
+.linkColumn{
+    display:inline-block;
+}
+
+#followLinks{
+    text-align:center;
+}
+
+
+#followLinks li{
+    display:inline-block;
+}
+#followLinks img{
+    width:5em;
+    height:5em;
+}
+#sideNav
+{
+    width:14em;
+    position:absolute;
+    z-index:4;
+}
+
+#sideNav li {
+    display:inline-block;
+    vertical-align: middle;
+    width:100%; 
+    position:relative;
+    border-bottom-width:thin;
+    border-style:solid;
+    border-radius:0.5em;
+	background-color: #24394F;
+    font-size:1.2em;
+    text-transform:uppercase;
+    text-align: right;
+}
+
+#sideNav li:hover{
+    border-bottom-width:medium;  
+}
+
+#sideNav div{
+    position: relative;
+    display:inline-block;
+    margin-left:0%;
+    vertical-align: middle;
+    height:2.5em;
+    width:100%;
+    padding-right:8%;
+    padding-top:7%;
+
+}
+
+a:link {
+    text-decoration: none;
+}

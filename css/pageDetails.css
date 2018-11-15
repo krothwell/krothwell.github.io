@@ -1,0 +1,17 @@
+#pageDetails {
+	position:relative;
+	//top: -20px;
+}
+
+#pageDetails h2, #pageDetails p {
+	font-size: 100%;
+	margin-top:0;
+}
+
+#pageDetails h2 {
+	display: ;
+}
+
+#pageDetails p {
+	margin-right:40px;
+}

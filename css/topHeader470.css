@@ -1,0 +1,12 @@
+#h1Subject {
+  border-left-style:none;
+  padding-left:0px;
+}
+#h1Name, #h1Subject {
+  float:left;
+  clear: both;
+}
+
+#topHeaderSpacer {
+  height:50px;
+}
