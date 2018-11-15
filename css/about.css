@@ -1,0 +1,15 @@
+#about {
+	margin-top:30px;
+}
+
+#about h2 {
+	font-size:170%;
+	font-family: Poly-Regular;
+	display:block;
+	text-decoration: underline double;
+}
+
+#about p {
+	font-size:130%;
+	color: #1C2026;
+}

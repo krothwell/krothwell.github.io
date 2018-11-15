@@ -1,0 +1,21 @@
+
+#topHeader {
+  padding-bottom:70px;
+}
+
+#topHeaderSpacer {
+  height:100px;
+}
+
+#h1Name, #h1Subject {
+
+}
+
+#h1Name {
+  font-size:130%;
+}
+
+#h1Subject {
+  font-size:229%;
+  line-height: 40px;
+}
