@@ -1,0 +1,20 @@
+
+#topHeader {
+  padding-bottom: 0px;
+  margin-left: 3px;
+  margin-right: 3px;
+    padding-top: 3px;
+}
+
+#topHeaderSpacer {
+  height:25px;
+}
+
+#h1Name, #h1Subject {
+  float:none;
+  clear:none;
+}
+
+#h1Name {
+  font-size:110%;
+}

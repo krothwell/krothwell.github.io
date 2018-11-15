@@ -1,0 +1,33 @@
+
+#topHeader {
+  padding-bottom: 0px;
+  margin-left: 3px;
+  margin-right: 3px;
+}
+
+#topHeaderSpacer {
+  height:50px;
+}
+
+#h1Name, #h1Subject {
+  float:none;
+  clear:none;
+}
+
+#h1Name {
+  font-size:119%;
+  text-decoration:underline;
+
+}
+
+#h1Subject {
+  padding-left: 3px;
+  border-left: 2px solid;
+  font-size:119%;
+  line-height: normal;
+  border-bottom: none;
+}
+
+#h1Cap {
+  text-transform: lowercase;
+}

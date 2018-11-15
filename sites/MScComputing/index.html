@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
+        <title>Cardiff University - MSc Computing</title>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+		<script type="text/javascript" src="jsMain.js"></script>
+        <link rel="stylesheet" href="main.css">
+        
+        <!--responsive media queries-->
+        <link media="(max-width: 1405px)" rel="stylesheet" href="1405.css">
+        <link media="(max-width: 1266px)" rel="stylesheet" href="1266.css">
+        <link media="(max-width: 1100px)" rel="stylesheet" href="1100.css">
+        <link media="(max-width: 650px)" rel="stylesheet" href="650.css">
+    </head>
+     
+    <body>
+        <a id="topAnchor"></a>
+        
+<!--TOP HEADER- - - - - - - - - - - - - - - - - - - - - -->
+        
+        <header id = "topHeader">
+            <h1>
+                <span id="h1p1">
+                    Cardiff University
+                </span>
+                <span id ="h1p2">
+                    MSc Computing
+                </span>
+            </h1>
+            <img id = "hamburger" src="resources/hamburger.png" alt = "Navigation menu">
+        </header>
+        <div id = "contentMargin">
+            
+<!-- WELCOME SECTION - - - - - - - - - - - - - - - - - - - - - -->
+            
+            <section id = "welcomeSect">
+                <h2 id = "welcomeH2">Welcome</h2>  
+                <div id = "welcomeDiv">
+                    <img id = "welcomeImg" src = "resources/welcomeImg.png" alt = "Stick figure waving">
+                    <p> <span>MSc Computing is designed for graduates who want to move into computing from another discipline.</span> We expect prospective candidates to possess at minimum a 2:2 honours degree or an equivalent professional qualification in a subject other than computing. Successful applicants will be taught how to think like a programmer and design software in a range of modules taught by our professional team of academics.</p>
+                </div>
+            </section>
+
+<!--WELCOME NAVIGATIO- - - - - - - - - - - - - - - - - - - - - -->
+
+            <nav id = "welcomeNav">
+                <ul>
+					<li>
+						<a href="#aimsAnchor" rel="" id="aimsA" class="h2anchor">
+							<div class = "aimsLink" title = "Course aims">Aims</div>
+						</a>
+					</li>
+					<li>
+						<a href="#modulesAnchor" rel="" id="modulesA" class="h2anchor">
+							<div class = "modulesLink" title = "Modules">Modules</div>
+						</a>
+					</li>
+					<li>
+                    	<a href="#structureAnchor" rel="" id="structureA" class="h2anchor">
+							<div class = "structureLink" title = "Course structure">Structure</div>
+						</a>
+					</li>
+					<li>
+						<a href="#careersAnchor" rel="" id="careersA" class="h2anchor">
+							<div class = "careersLink" title = "Career paths">Careers</div>
+						</a>
+					</li>
+					<li>
+						<a href="#contactAnchor" rel="" id="contactA" class="h2anchor">
+							<div class = "contactLink" title = "Contact us">Contact</div>
+						</a>
+					</li>
+					<li>
+						<a href="#linksAnchor" rel="" id="linksA" class="h2anchor"> 
+							<div class = "moreInfoLink" title = "More information">More info</div>
+						</a>
+					</li>
+                </ul>
+            </nav>
+            <div class ="bottomBorder">
+                <div class ="downScroller">
+                    <a href="#aimsAnchor" rel="" class="h2anchor"><img src="resources/arrowDown.png" alt="Course aims"></a>
+                </div>
+            </div>
+        
+<!--AIMS SECTION - - - - - - - - - - - - - - - - - - - - - -->
+        
+            <section id = "aimsSect">
+                <h2 id = "aimsH2">Aims</h2><a id="aimsAnchor" class="anchorPoint"></a> 
+                <div id = "aimsDiv">
+					<p id = "aimsP">
+						We aim to provide students with a well-rounded education in computing, which includes:
+					</p>
+                    <ul>
+                        <li>an opportunity to combine elements of their previous studies with computing in a final project of their own design</li>
+                        <li>software construction skills on multiple platforms and languages</li>
+						<li>an understanding of a computer's roots, networking and the internet</li>
+						<li>multiple module choices providing deeper understanding of subjects they're most interested in.
+						</li>
+                    </ul>
+                </div>
+            </section>
+        
+<!--END OF AIMS SECTION- - - - - - - - - - - - - - - - - - - - - -->
+            
+            <div class ="bottomBorder">
+                <div class ="downScroller">
+                    <a href="#modulesAnchor" rel="" class="h2anchor"><img src="resources/arrowDown.png" alt="Modules"></a>
+                </div>
+            </div>
+                
+<!--MODULES SECTION- - - - - - - - - - - - - - - - - - - - - -->
+                
+			<section id = "modulesSect">
+                <h2>Modules</h2><a id="modulesAnchor" class="anchorPoint"></a> 
+                <div id = "modulesDiv">
+					<p>
+						Our core modules provide a comprehensive understanding of a broad range of computing solutions. The course is also complemented by a number of optional choices allowing students to delve deeper in to the subjects they are most interested in.
+					</p>
+					<h3>Core modules</h3> 
+						<ul>
+							<li><span class = "modNames">Python: </span><span class = "modDescriptions">the fundamentals of programming, data structures and algorithms </span></li>
+							<li><span class = "modNames">Software Engineering: </span><span class = "modDescriptions">students will be familiarised with each stage of the software development life cycle, learning to plan and build an application from start to finish in a team.</span></li>
+                            <li><span class = "modNames">Web applications: </span><span class = "modDescriptions">students will build websites and applications the whole world can access over the internet.</span></li>
+                                <li><span class = "modNames">Java: </span><span class = "modDescriptions">students will learn to build complex, visual applications, combining what they have learned in Python and taking it further.</span></li>
+						</ul>
+					<h3>Optional modules</h3>
+                    	<ul>	
+                            <li>
+                                <span class = "modNames">Computational systems: </span>
+                                <span class = "modDescriptions">learn the foundations modern computers work upon and how higher level language is translated in to machine code.</span>
+                            </li>
+                            <li>
+                                <span class = "modNames">E-Commerce and Innovation: </span>
+                                <span class = "modDescriptions">This module equips students with an understanding of new business opportunities on the internet and how to approach the tasks associated with researching and setting up a high-tech business or social enterprise venture.</span></li>
+                            <li>
+                                <span class = "modNames">Information Modelling and Database Systems:</span> <span class = "modDescriptions">students will be familiarized with issues and successful approaches in the design of distributed systems</span></li>
+                            <li>
+                                <span class = "modNames">Distributed and Cloud Computing: </span>
+                                <span class = "modDescriptions">this module covers the organisation of distributed systems, core technologies to implement distributed systems, various models and infrastructures to support Cloud computing and emerging themes in distributed systems</span></li>
+                            <li>
+                                <span class = "modNames">Human Centric Computing: </span>
+                                <span class = "modDescriptions">this module will develop the technical, societal, business and management understanding to enable individuals to define and deliver effective information systems from a human centric perspective.</span></li>
+						</ul>
+					<h3>Project and dissertation</h3>
+						<p>In the final third of the course, students are expected to undertake a project. The project will be of their own design and written up in an end of year dissertation. This is an opportunity to take elements of what they have learned throughout the year and put it in to an innovative idea which stretches their abilities to the limit.</p>
+                </div>
+            </section>
+                
+<!--END OF MODULES SECTION- - - - - - - - - - - - - - - - - - - - - -->
+                
+            <div class ="bottomBorder">
+                <div class ="downScroller">
+                    <a href="#structureAnchor" rel="" class="h2anchor"><img src="resources/arrowDown.png" alt = "Course structure"></a>
+                </div>
+            </div>
+        
+<!--STRUCTURE SECTION - - - - - - - - - - - - - - - - - - - - - -->
+                
+			<section id = "structureSect">
+                <h2>Structure</h2><a id="structureAnchor" class="anchorPoint"></a> 
+                <div id = "structureDiv">
+					<p>
+						Under normal circumstances, full-time students will complete the course within a year, whilst part-time students will complete the course within three years.
+					</p>
+					<div id = "listWrapper">
+						<div class = "structureLists">
+							<h3>Full-time</h3>
+								<h4>Autumn semester</h4>
+									<ul class="structUL1">
+										<li>Software engineering</li>
+										<li>Web applications</li>
+										<li>Python</li>
+										<li>an optional module:
+											<ul class="structUL2">
+												<li>Computational Systems</li>
+												<li>E-commerce and Innovation</li>
+											</ul>
+										</li>
+									</ul>
+								<h4>Spring semester</h4>
+									<ul class="structUL1">
+										<li>Software Engineering</li>
+										<li>Java</li>
+										<li>an optional module: 
+											<ul class="structUL2">
+												<li>Distributed and Cloud Computing</li>
+												<li>Human Centric Computing</li>
+												<li>Information Modelling and Database Systems</li>
+											</ul>
+										</li>
+										<li>Project and dissertation</li>
+									</ul>
+						</div>
+						<div class = "structureLists">
+							<h3>Part-time</h3>
+								<h4>Year 1 - Autumn Semester</h4>
+									<ul class="structUL1">
+										<li>Software engineering</li>
+										<li>Python</li>
+									</ul>
+								<h4>Year 1 - Spring semester</h4>
+									<ul class="structUL1">
+										<li>Software Engineering</li>
+										<li>Java</li>
+									</ul>
+								<h4>Year 2 - Autumn semester</h4>
+									<ul class="structUL1">
+										<li>Web applications</li>
+										<li>an optional module:
+											<ul class="structUL2">
+												<li>Computational Systems</li>
+												<li>E-commerce and Innovation</li>
+											</ul>
+										</li>
+										<li>Project and dissertation</li>
+									</ul>
+								<h4>Year 2 - Spring semester</h4>
+									<ul class="structUL1">
+										<li>spring semester chosen module</li>
+										<li>an optional module: 
+											<ul class="structUL2">
+												<li>Distributed and Cloud Computing</li>
+												<li>Human Centric Computing</li>
+												<li>Information Modelling and Database Systems</li>
+											</ul>
+										</li>
+									</ul>
+								<h4>Year 3</h4>
+									<ul class="structUL1">
+										<li>Project and dissertation</li>
+									</ul>
+						</div>
+					</div>
+				</div>
+            </section>
+                
+<!--END OF STRUCTURE SECTION- - - - - - - - - - - - - - - - - - - - - -->
+            
+            <div class ="bottomBorder">
+                <div class ="downScroller">
+                    <a href="#careersAnchor" rel="" class="h2anchor"><img src="resources/arrowDown.png" alt = "Career paths"></a>
+                </div>
+            </div>
+                
+<!--CAREERS SECTION- - - - - - - - - - - - - - - - - - - - - -->
+                
+            <section id = "careersSect">
+                <h2>Careers</h2><a id="careersAnchor" class="anchorPoint"></a> 
+                <div id = "careersDiv">
+					<p>
+						Recent graduates have gained employment in roles such as software development, systems analysts, business analysts, IT consultants and support engineers.</p>
+                    <div class = "careersBox"><img src = "resources/career1.jpg" alt = "Ben Thomas"><div class="careersP"><p>Ben Thomas now works for Facebook. <span>"MSc Computing was a great course for me as I was able to combine ideas from my social science bachelors"</span></p></div></div>
+                    <div class = "careersBox"><img src = "resources/career2.jpg" alt = "Cindy Gutterford"><div class="careersP"><p>Cindy Gutterford is working on data base security for River Island. <span>"The course opened my eyes to the world of databases. I had no idea!"</span></p></div></div>
+                    <div class = "careersBox"><img src = "resources/career3.jpg" alt = "Billy Trashard"><div class="careersP"><p>Billy Trashard founded his own IT start-up. <span>"Without the foundation in programming I gained from Cardiff, I would still be working in Star Bucks"</span></p></div></div>
+                </div>
+            </section>
+                
+<!--END OF CAREERS SECTION- - - - - - - - - - - - - - - - - - - - - -->
+            
+            <div class ="bottomBorder">
+                <div class ="downScroller">
+                    <a href="#contactAnchor" rel="" class="h2anchor"><img src="resources/arrowDown.png" alt = "Contact us"></a>
+                </div>
+            </div>
+
+<!--CONTACT SECTION- - - - - - - - - - - - - - - - - - - - - -->
+
+            <section id = "contactSect">
+                <h2>Contact</h2><a id="contactAnchor" class="anchorPoint"></a> 
+                <div id = "contactDiv">
+					<p>
+						If you are interested in applying or have any questions about the course, please get in touch.
+                    </p>
+                    <form action="MAILTO:kmrothwell@gmail.com?subject=MSc%20computing%20enquiry" method="post" enctype="text/plain">
+                        <label for="name">Name</label>
+                        <input class = "textIn" type="text" id="name">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message"></textarea>
+                        <input id = "submitInput" type="submit" value="Send message">
+                    </form>
+                </div>
+            </section>
+
+<!--END OF CONTACT SECTION- - - - - - - - - - - - - - - - - - - - - -->
+            
+            <div class ="bottomBorder">
+                <div class ="downScroller">
+                    <a href="#linksAnchor" rel="" class="h2anchor"><img src="resources/arrowDown.png" alt = "More information"></a>
+                </div>
+            </div>
+            
+<!--MORE INFO SECTION- - - - - - - - - - - - - - - - - - - - - -->
+                
+            <section id = "moreInfoSect">
+                <h2>More info</h2><a id="linksAnchor" class="anchorPoint"></a> 
+                <div id = "moreInfoDiv">
+                    <div class = "linkColumn">
+                    <h3>Cardiff University</h3>
+                        <ul>
+                            <li><a href="http://www.cardiff.ac.uk/" target="_blank">Main site</a></li>
+                            <li><a href="http://www.cs.cf.ac.uk/currentstudents/" target="_blank">Current students</a></li>
+                            <li><a href="http://courses.cardiff.ac.uk/index.html" target="_blank">Course finder</a></li>
+                            <li><a href="https://sims.cf.ac.uk/" target="_blank">Sims</a></li>
+                            <li><a href="https://learningcentral.cf.ac.uk/" target="_blank">Learning central</a></li>
+                        </ul>
+                    </div>
+                    <div class = "linkColumn">
+                    <h3>External stakeholders</h3>
+                        <ul>
+                            <li><a href="https://www.ucas.com/" target="_blank">UCAS</a></li>
+                            <li><a href="http://www.studentfinancewales.co.uk/" target="_blank">Student Finance Wales</a></li>
+                            <li><a href="http://www.careerswales.com/en/" target="_blank">Careers Wales</a></li>
+                            <li><a href="https://www.cardiff.gov.uk/ENG/Home/Pages/default.aspx" target="_blank">Cardiff Council</a></li>
+                        </ul>
+                    </div>
+                    <div id = "followLinks">
+                        <h3>Follow us</h3>
+                            <ul>
+                                <li><a href = "http://www.facebook.com/cardiffuni" target="_blank"><img src = "resources/FBLogo.png" alt = "Facebook"></a></li>
+                                <li><a href = "https://twitter.com/cardiffuni" target="_blank"><img src = "resources/TwitterLogo.png" alt = "Twitter"></a></li>
+                                <li><a href = "https://plus.google.com/u/0/105597832656358813737/" target="_blank"><img src = "resources/GoogleIcon.png" alt = "Google +"></a></li>
+                                <li><a href = "http://www.cardiff.ac.uk/news/rss.xml" target="_blank"><img src = "resources/RSSicon.png" alt = "RSS"></a></li>
+                                <li><a href = "http://vimeo.com/cardiffuni" target="_blank"><img src = "resources/vimeoIcon.png" alt = "Vimeo"></a></li>
+                                <li><a href = "http://www.youtube.com/cardiffuni" target="_blank"><img src = "resources/youtubeIcon.png" alt = "Youtube"></a></li>
+                            </ul>
+                    </div>
+                </div>
+            </section>
+                
+<!--END OF MORE INFO SECTION- - - - - - - - - - - - - - - - - - - - - -->
+                
+            
+                
+<!--SIDE NAVIGATION- - - - - - - - - - - - - - - - - - - - - -->
+                
+                    <nav id = "sideNav">
+                <ul>
+                    <li><a href="#topAnchor" rel="" id="topA" class="h2anchor">
+                    	<div class = "welcomeLink" title = "Welcome">Welcome</div>
+                        </a></li>
+                    <li><a href="#aimsAnchor" rel="" class="h2anchor">
+                        <div class = "aimsLink" title = "Course aims">Aims</div>
+                        </a></li>
+                    <li><a href="#modulesAnchor" rel="" class="h2anchor">
+                        <div class = "modulesLink" title = "Modules">Modules</div>
+                        </a></li>
+                    <li><a href="#structureAnchor" rel="" class="h2anchor">
+                        <div class = "structureLink" title = "Course structure">Structure</div>
+                        </a></li>
+                    <li><a href="#careersAnchor" rel="" class="h2anchor">
+                        <div class = "careersLink" title = "Careers">Careers</div>
+                        </a></li>
+                    <li><a href="#contactAnchor" rel="" class="h2anchor">
+                        <div class = "contactLink" title = "Contact us">Contact us</div>
+                        </a></li>
+                    <li><a href="#linksAnchor" rel="" class="h2anchor">
+                        <div class = "moreInfoLink" title = "More info">More info</div>
+                        </a></li>
+                </ul>
+            </nav>
+            
+        </div>
+
+    </body>
+    
+</html>
